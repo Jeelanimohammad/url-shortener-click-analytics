@@ -465,7 +465,13 @@
         }
 
         // Initial load
-        loadUrls();
+        loadUrls().then(() => {
+            const params = new URLSearchParams(window.location.search);
+            const modalCode = params.get('modal');
+            if (modalCode) {
+                viewAnalytics(modalCode);
+            }
+        });
     </script>
 </body>
 </html>
