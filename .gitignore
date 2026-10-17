@@ -1,0 +1,29 @@
+# ─── Compiled output ──────────────────────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+
+# ─── IDE files ────────────────────────────────────────────────────────────────
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# ─── Maven wrapper ────────────────────────────────────────────────────────────
+.mvn/wrapper/maven-wrapper.jar
+
+# ─── Environment / secrets ────────────────────────────────────────────────────
+# NEVER commit real database passwords or secret keys
+.env
+*.env
+application-local.properties
+application-secret.properties
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── OS files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
