@@ -47,7 +47,7 @@ public class RedirectController {
      *   - In a browser: returns 404 JSON (handled by GlobalExceptionHandler).
      *   - The click is NOT recorded (no call to resolveAndTrack).
      */
-    @GetMapping("/{shortCode:[a-zA-Z0-9]{5,10}}")
+    @GetMapping("/{shortCode}")
     public ResponseEntity<Void> redirect(@PathVariable String shortCode) {
         // resolveAndTrack throws ShortCodeNotFoundException if not found —
         // GlobalExceptionHandler converts that to a 404 JSON response.

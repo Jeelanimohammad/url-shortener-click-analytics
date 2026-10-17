@@ -1,6 +1,6 @@
 # 🔗 URL Shortener with Click Analytics
 
-A clean, production-ready Spring Boot backend and web dashboard that converts long URLs into unique short links, performs HTTP 302 redirections, and tracks comprehensive click analytics in PostgreSQL.
+A clean, production-ready Spring Boot REST API backend that converts long URLs into unique short links, performs HTTP 302 redirections, and tracks comprehensive click analytics in PostgreSQL.
 
 ---
 
@@ -109,7 +109,7 @@ server.port=${SERVER_PORT:8082}
 ```bash
 mvn clean spring-boot:run
 ```
-Access the application dashboard at: **`http://localhost:8082`**
+Access the API endpoints at: **`http://localhost:8082`**
 
 ---
 
@@ -225,8 +225,7 @@ url-shortener-click-analytics/
 │   │   │       ├── UrlShortenerService.java
 │   │   │       └── UrlValidationService.java
 │   │   └── resources/
-│   │       ├── application.properties
-│   │       └── static/index.html
+│   │       └── application.properties
 │   └── test/java/com/urlshortener/service/
 │       ├── ShortCodeGeneratorServiceTest.java
 │       ├── UrlShortenerServiceTest.java
